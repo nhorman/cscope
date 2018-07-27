@@ -25,8 +25,10 @@ AC_DEFINE([FILEVERSION], [], [Major part of release version])
 AC_DEFINE([FIXVERSION], [], [Minor part of release version])
 AS_VAR_SET(MAJOR_VERSION, [$(echo $PACKAGE_VERSION | cut -d'.' -f1)])
 AS_VAR_SET(MINOR_VERSION, [$(echo $PACKAGE_VERSION | cut -d'.' -f2)])
+
+dnl Wierd I know, its because FIXVERSION is a string macro.  need to fix
 AC_DEFINE_UNQUOTED(FILEVERSION, $MAJOR_VERSION)
-AC_DEFINE_UNQUOTED(FIXVERSION, $MINOR_VERSION)
+AC_DEFINE_UNQUOTED(FIXVERSION, ".$MINOR_VERSION")
 
 
 dnl === BEGIN CURSES CHECK
