@@ -42,15 +42,10 @@ be considered for the next release.  If you are using the cache, and at
 some point 'config.cache' contains results you don't want to keep, you
 may remove or edit it.
 
-   The file 'configure.ac' (or 'configure.in') is used to create
-'configure' by a program called 'autoconf'.  You need 'configure.ac' if
-you want to change it or regenerate 'configure' using a newer version of
-'autoconf'.
-
    The simplest way to compile this package is:
 
-  1. 'cd to the directory you checked cscope out to, and run the autogen.sh
-     script.  This will use the autotools suite to generate the configure
+  1. 'cd to the directory you checked cscope out to, and run the autoreconf 
+     program.  This will use the autotools suite to generate the configure
      script, associated headers and Makefile.in files.
 
   2. Run the ./configure script generated in step 1.
