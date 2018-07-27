@@ -1,0 +1,10 @@
+language: c
+dist: trusty
+
+compiler:
+  - clang
+  - gcc
+
+script: aclocal && autoheader && autoconf && automake  && ./configure && make && make check
+
+
