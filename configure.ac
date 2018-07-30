@@ -425,5 +425,5 @@ case "$host_os" in
 	;;
 esac
 
-AC_CONFIG_FILES([Makefile doc/Makefile src/Makefile contrib/Makefile])
+AC_CONFIG_FILES([Makefile doc/Makefile src/Makefile contrib/Makefile tests/Makefile])
 AC_OUTPUT
