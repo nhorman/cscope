@@ -29,3 +29,4 @@ used by developers, not administrators or anonymous users.
 
 Browse to http://cscope.sourceforge.net for more current information
 
+[![Build Status](https://travis-ci.org/Irqbalance/irqbalance.svg?branch=master)](https://travis-ci.org/Irqbalance/irqbalance)
